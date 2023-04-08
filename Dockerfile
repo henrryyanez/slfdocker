@@ -9,6 +9,7 @@ COPY package*.json ./
 
 # Install the npm packages
 RUN npm install
+RUN apk add curl
 
 # Copy the rest of the application files to the container
 COPY . .

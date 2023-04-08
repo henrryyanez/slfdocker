@@ -3,8 +3,8 @@ services:
   nodejs:
     build: .
     ports:
-      - "3000:3000"
-    container_name: nodejsbase
+      - "5000:3000"
+    container_name: nodejs_eve
     volumes:
       - .:/app
     environment:
